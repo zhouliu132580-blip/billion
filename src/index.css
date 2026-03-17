@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-spring-main: #D32F2F;
+  --color-spring-light: #EF5350;
+  --color-spring-bg: #FFF5F5;
+  --color-spring-accent: #FFD700;
+}
+
+@layer base {
+  body {
+    @apply bg-spring-bg text-[#333333] font-sans;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.spring-gradient {
+  background: linear-gradient(135deg, #EF5350 0%, #D32F2F 100%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom scrollbar for the table */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #EF5350;
+  border-radius: 3px;
+}
+
