@@ -2,10 +2,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-spring-main: #D32F2F;
-  --color-spring-light: #EF5350;
-  --color-spring-bg: #FFF5F5;
-  --color-spring-accent: #FFD700;
+  --color-spring-main: #1E40AF;
+  --color-spring-light: #3B82F6;
+  --color-spring-bg: #F0F9FF;
+  --color-spring-accent: #FDE047;
 }
 
 @layer base {
@@ -24,7 +24,7 @@
 }
 
 .spring-gradient {
-  background: linear-gradient(135deg, #EF5350 0%, #D32F2F 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
 }
 
 .glass-panel {
@@ -44,7 +44,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #EF5350;
+  background: #3B82F6;
   border-radius: 3px;
 }
 
