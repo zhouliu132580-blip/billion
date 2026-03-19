@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-spring-main: #1E40AF;
-  --color-spring-light: #3B82F6;
-  --color-spring-bg: #F0F9FF;
+  --color-spring-main: #DC2626;
+  --color-spring-light: #EF4444;
+  --color-spring-bg: #FEF2F2;
   --color-spring-accent: #FDE047;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .spring-gradient {
-  background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+  background: linear-gradient(135deg, #EF4444 0%, #991B1B 100%);
 }
 
 .glass-panel {

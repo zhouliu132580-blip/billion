@@ -54,7 +54,7 @@ const Banner = ({
   onOpenPanel: () => void
 }) => {
   return (
-    <div className="relative w-full h-[360px] sm:h-[420px] bg-[#1E40AF] overflow-hidden flex flex-col items-center justify-center p-4">
+    <div className="relative w-full h-[360px] sm:h-[420px] bg-[#991B1B] overflow-hidden flex flex-col items-center justify-center p-4">
       {/* Texture Overlay */}
       <div className="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Cfilter id='noiseFilter'%3%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }} />
@@ -69,14 +69,14 @@ const Banner = ({
           transition={{ duration: 5, repeat: Infinity }}
           className="absolute top-10 right-[15%]"
         >
-          <LeafIcon className="w-12 h-12 text-blue-900/20" />
+          <LeafIcon className="w-12 h-12 text-red-900/20" />
         </motion.div>
         <motion.div 
           animate={{ y: [0, 20, 0], rotate: [0, -15, 0] }}
           transition={{ duration: 6, repeat: Infinity, delay: 1 }}
           className="absolute bottom-20 left-[10%]"
         >
-          <LeafIcon className="w-10 h-10 text-blue-900/15" />
+          <LeafIcon className="w-10 h-10 text-red-900/15" />
         </motion.div>
       </div>
 
@@ -135,13 +135,13 @@ const Banner = ({
                   initial={{ width: 0 }}
                   animate={{ width: '50%' }}
                   transition={{ duration: 1.5, ease: "easeOut" }}
-                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 via-blue-200 to-white shadow-[0_0_15px_rgba(255,255,255,0.6)]"
+                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-red-400 via-red-200 to-white shadow-[0_0_15px_rgba(255,255,255,0.6)]"
                 />
                 {/* Midpoint Marker */}
                 <div className="absolute left-1/2 top-0 w-0.5 h-full bg-white/50 z-10" />
               </div>
               <div className="text-center">
-                <span className="text-[11px] text-white font-bold bg-blue-600/60 px-3 py-1 rounded-full backdrop-blur-md border border-white/20 shadow-lg">
+                <span className="text-[11px] text-white font-bold bg-red-600/60 px-3 py-1 rounded-full backdrop-blur-md border border-white/20 shadow-lg">
                   时间进度: 50%
                 </span>
               </div>
@@ -443,7 +443,7 @@ const Home = ({ onEnterLeaderboard }: { onEnterLeaderboard: () => void }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={onEnterLeaderboard}
-        className="fixed right-0 top-1/3 z-50 bg-blue-600 text-white py-4 px-2 rounded-l-2xl shadow-xl flex flex-col items-center gap-2 border border-blue-400 border-r-0"
+        className="fixed right-0 top-1/3 z-50 bg-red-600 text-white py-4 px-2 rounded-l-2xl shadow-xl flex flex-col items-center gap-2 border border-red-400 border-r-0"
         style={{ writingMode: 'vertical-rl' }}
       >
         <span className="text-sm font-bold tracking-[0.2em]">亿元激励榜</span>
